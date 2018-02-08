@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1 class="page-header">Album</h1>
+
+  <!-- FORM TO UPLOAD THE IMAGES -->
+  <form method="post" enctype="multipart/form-data" id="formUpload">
+    {% csrf_token %}
+    {{ form }}
+  </form>
+
+
+
+{% endblock %}
